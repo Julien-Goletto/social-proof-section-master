@@ -62,7 +62,7 @@ body{
     background-color: hsl(300, 43%, 22%);
     border-radius: 5px;
     padding : 20px;
-    margin-bottom: 15px;;
+    margin-bottom: 15px;
 }
 
 .user__comments__header{
@@ -96,4 +96,76 @@ body{
 
 .usercomment__comment{
     color : white;
+}
+
+@media (min-width : 930px){
+    .desktop-display{
+        display : flex;
+        justify-content: space-between;
+    }
+
+    .header{
+        width : 50%;
+        max-width : 400px;
+        padding : 50px 60px 10px 10px;
+        text-align : left;
+        margin-left : 5%;
+    }
+
+    .ratings{
+        width : 50%;
+        padding : 50px 10px;
+        display : flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top : 50px;
+    }
+
+    .ratings__rating{
+        display : inline-block;
+        width : 60%;
+        max-width : 350px;
+        padding : 5px 10px;
+        margin-bottom: 15px;
+    }
+    .rating__stars{
+        width : 60px;
+        height : 15px;
+        vertical-align : middle;
+        margin-right : 25px;
+        background-size: 20%;
+        display : inline-block;
+    }
+    .rating__source{
+        display: inline-block;
+        vertical-align : middle;
+    }
+
+    .ratings__rating:nth-child(2){
+        margin-left: 20%;
+    }
+    .ratings__rating:nth-child(3){
+        margin-left: 40%;
+    }
+
+    .users-comments{
+        flex-direction: row;
+    }
+
+    .user__comment{
+        /* width : 25%; */
+        width : 300px;
+        height : 180px;
+        padding : 30px;
+        margin-right: 10px;
+        margin-bottom : 50px;
+    }
+
+    .user__comment:nth-child(2){
+        margin-top: 25px;
+    }
+
+    .user__comment:nth-child(3){
+        margin-top: 50px;
+    }
 }
